@@ -1,0 +1,43 @@
+
+BODY {
+	margin: 2px;
+	padding: 2px;
+	background-color: skyblue;
+}
+
+A {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+@media (min-width: 800px) {
+	body {
+		background-color: skyblue;
+	}
+}
+@media (max-width: 799px) {
+	body {
+		background-color: red;
+	}
+}
+
+@media print {
+	.screen-only {
+		display: none
+	}
+}
+
+.mygrid {
+	background-color: skyblue;
+	display: grid;
+	padding: 2px;
+	grid-column-gap: 2px;
+	grid-row-gap: 1px;
+	grid-template-columns: 200px auto 
+}
+.mygrid-item {
+	background-color: skyblue;
+	font-size: 20px;
+	padding: 2px;
+	text-align: center;
+}
